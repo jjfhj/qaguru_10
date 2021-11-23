@@ -1,14 +1,18 @@
 package com.github.jjfhj.tests;
 
 import com.github.jjfhj.pages.RegistrationsPage;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.github.jjfhj.tests.TestData.*;
+
+@DisplayName("Форма регистрации 'Student Registration Form'")
 
 public class StudentRegistrationForm extends TestBase {
 
     RegistrationsPage registrationsPage = new RegistrationsPage();
 
+    @DisplayName("Позитивный тест: Заполнение формы регистрации 'Student Registration Form'")
     @Test
     void fillFormTest() {
         registrationsPage.openPage()
